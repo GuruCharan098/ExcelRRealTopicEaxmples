@@ -14,7 +14,6 @@ function App() {
   return (
     <div>
       <h1>React SPA All Features</h1>
-
       <RouterDemo />
       <DynamicSPA />
       <Todo />
