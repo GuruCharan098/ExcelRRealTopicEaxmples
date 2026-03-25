@@ -1,20 +1,19 @@
-import axios from 'axios'
+import axios from "axios";
 
-const API_URL = "http://localhost:3000/users";
+const api = axios.create({
+  baseURL: "http://localhost:3000/users",
+});
 
-export const getUsers = async ()=>{
-    const res = await axios.get(API_URL);
-    return res.data; 
-}
+// GET
+export const getUsers = async () => (await api.get("/")).data;
 
-export const addUsers = async(user) =>{
-    return axios.post(API_URL, user)
-}
+// POST
+export const addUsers = async (user) => (await api.post("/", user)).data;
 
-export const updateUsers = async(id, user) =>{
-    return axios.put(`${API_URL}/${id}`, user)
-}
+// PUT
+export const updateUsers = async (id, user) =>
+  (await api.put(`/${id}`, user)).data;
 
-export const deleteUsers = async(id) =>{
-    return axios.delete(`${API_URL}/${id}`)
-}
+// DELETE
+export const deleteUsers = async (id) =>
+  (await api.delete(`/${id}`)).data;
