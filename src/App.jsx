@@ -11,6 +11,7 @@ import Chat from "./components/Chat";
 import CacheAPI from "./components/CacheAPI.jsx";
 
 function App() {
+  
   return (
     <div>
       <h1>React SPA All Features</h1>
