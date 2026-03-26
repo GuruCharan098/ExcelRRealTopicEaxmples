@@ -15,7 +15,7 @@ const CrudOperation = () => {
   const [form, setForm] = useState({ name: "", email: "" });
   const [editId, setEditId] = useState(null);
 
-  // ✅ Load Users
+  // Load Users
   const loadUsers = async () => {
     try {
       const data = await getUsersfetchApi();
@@ -29,12 +29,12 @@ const CrudOperation = () => {
     loadUsers();
   }, []);
 
-  // ✅ Handle Input Change (FIXED)
+  // Handle Input Change (FIXED)
   const handleChanges = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-  // ✅ Handle Submit (Add + Update)
+  //  Handle Submit (Add + Update)
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -53,7 +53,7 @@ const CrudOperation = () => {
     }
   };
 
-  // ✅ Handle Edit
+  // Handle Edit
   const handleEdit = (user) => {
     setForm({
       name: user.name,
@@ -62,7 +62,7 @@ const CrudOperation = () => {
     setEditId(user.id);
   };
 
-  // ✅ Handle Delete
+  // Handle Delete
   const handleDelete = async (id) => {
     try {
       await deleteUserfetchApi(id);

@@ -1,14 +1,9 @@
 {
   "users": [
     {
-      "name": "Guru Charan Das Paramhansi",
-      "email": "gurucharan.p@excelr.com",
-      "id": "gCtk38XhE9c"
-    },
-    {
-      "name": "hello",
-      "email": "hello@gmail.com",
-      "id": "qaTPiqnnvNU"
+      "name": "test121",
+      "email": "test121@gmail.com",
+      "id": "g0UhBnXkRa4"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

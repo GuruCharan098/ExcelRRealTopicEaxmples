@@ -4,13 +4,15 @@ import './index.css'
 import App from './App.jsx'
 import RouterComponent from './RouterExample/RouterComponent.jsx'
 import { BrowserRouter } from 'react-router-dom'
+import CombineAllHooks from '../src/ReactHooksExmp/CombineAllHooks.jsx'
 import CurdOperation from './ApiCrud/CrudOperation.jsx'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-   <BrowserRouter>
+   {/* <BrowserRouter>
       <RouterComponent />
     </BrowserRouter>
-    <App />
-    <CurdOperation/>
+    <App /> */}
+    {/* <CurdOperation/> */}
+    <CombineAllHooks/>
   </StrictMode>
 )
